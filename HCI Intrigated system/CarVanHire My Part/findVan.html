@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <title>Car Van Hire Main Page</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- CSS only -->
+
+    <link rel="stylesheet" type="text/css" href="css/carHome.css" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- JS, Popper.js, and jQuery -->
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="https://fontawesome.com/icons/gas-pump?style=solid" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="../Navbar/navbar.css" />
+  <style>
+      .headbot{
+    margin-top: 25px;
+    margin-bottom: 20px !important;
+}
+.dropdown{
+    width: 70px;
+    height: 50px !important;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+.act {
+    font-weight: 800;
+    color: #0f0f0f;
+}
+</style>
+</head>
+
+ 
+<body style=" font-family: 'Poppins', sans-serif; background-color: #eee; margin: 0px; padding: 0px;">
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="#"><img src="../Logo/LOGO.png"  width="180" height="45" alt=""
+              /></a>
+            <ul class="navbar-nav mr-auto right">
+              <div class="hide">
+                <li class="nav-item">
+                  <a href="#" aria-pressed="true">Accommodation</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./CarVanHire My Part/carVan.html" aria-pressed="true">Car/Van Hire</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" aria-pressed="true">Tours/Services</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" aria-pressed="true">Wanted</a>
+                </li>
+              </div>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  LKR
+                </a>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <a class="dropdown-item" href="#">USD</a>
+                  <a class="dropdown-item" href="#">AUR</a>
+                  <a class="dropdown-item" href="#">IR</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <img src="../Navbar/sri-lanka.png" class="country" />
+              </li>
+              <li class="nav-item">
+                <a
+                  href="../Login_Registration/login_reg.html"
+                  class="btn btn-outline-light nt"
+                  role="button"
+                  aria-pressed="true"
+                  >Sign In</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="../Login_Registration/reg.html"
+                  class="btn btn-light nt"
+                  role="button"
+                  aria-pressed="true"
+                  >Register</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div class="headbot">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <img class="ii" src="../Navbar/rental.png" /><a href="#">
+                <span class="text">Accommodation</span></a
+              >
+            </div>
+            <div class="col-sm">
+              <img class="ii" src="../Navbar/taxi.png" /><a href="./CarVanHire My Part/carVan.html"
+                ><span class="text act">Car/Van Hire</span></a
+              >
+            </div>
+            <div class="col-sm">
+              <img class="ii" src="../Navbar/direction.png" /><a href="../TourServices/TourServiceHome.html"
+                ><span class="text">Tours/Services</span></a
+              >
+            </div>
+            <div class="col-sm">
+              <img class="ii" src="../Navbar/house.png" /><a href="../Isurangi/Wanted/WantedHome.html"
+                ><span class="text">Wanted</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="row">
+        <div>
+            <div class=" col-sm-10 m-5 p-2 bg-white rounded-lg">
+                <label>
+                    <h5><b>Filter by:</b></h5>
+                </label>
+                <!-- Sorting -->
+    
+                <div class="select-outline position-relative w-100">
+                    <label>Sort</label>
+                    <select id="sort" class="mdb-select md-form md-outline rounded-lg">
+                        <option value="1">Best Rating</option>
+                        <option value="2">Lowest Price First</option>
+                        <option value="3">Highest Price First</option>
+                    </select>
+                </div>
+    
+                <!-- Sorting -->
+    
+                <!-- Section: Driver -->
+                <section filter="Driver" class="border border-secondary p-2 rounded-lg mb-4">
+                    <h6 class="font-weight-bold mb-3">Driver</h6>
+    
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input pt-1" id="withDriver" onclick="withDriver()">
+                        <label class="custom-control-label" for="withDriver">With Driver</label>
+                    </div>
+    
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input pt-1" id="withoutDriver">
+                        <label class="custom-control-label" for="withoutDriver">Without Driver</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input pt-1" id="anydriver">
+                        <label class="custom-control-label" for="anydriver">With or Without Driver</label>
+                    </div>
+                </section>
+                <!-- Section: Driver -->
+    
+                <!-- Section: Fuel -->
+    
+                <section class="border border-secondary p-2 rounded-lg mb-4" filter="size">
+                    <h6 class="font-weight-bold mb-3">Fuel Policy</h6>
+    
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input pt-1" id="Policy">
+                        <label class="custom-control-label" for="Policy">Like for Like</label>
+                    </div>
+    
+                </section>
+                <!-- Section: Fuel -->
+    
+                <!-- Section: Milage -->
+    
+                <section class="border border-secondary p-2 rounded-lg mb-4" filter="size">
+                    <h6 class="font-weight-bold mb-3">Mileage</h6>
+    
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input pt-1" id="mile">
+                        <label class="custom-control-label" for="mile">Limited</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input pt-1" id="mile1">
+                        <label class="custom-control-label" for="mile1">Unlimited</label>
+                    </div>
+    
+                </section>
+                <!-- Section: Mileage -->
+    
+                <!-- Section: Specification -->
+    
+                <section class="border border-secondary p-2 rounded-lg mb-4" filter="size">
+                    <h6 class="font-weight-bold mb-3">Car Specification</h6>
+    
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input pt-1" id="spe">
+                        <label class="custom-control-label" for="spe">Automatic</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input pt-1" id="spe1">
+                        <label class="custom-control-label" for="spe1">Manual</label>
+                    </div>
+    
+                </section>
+                <!-- Section: Specification -->
+    
+                <!-- Section: A/C -->
+    
+                <section class="border border-secondary p-2 rounded-lg mb-4" filter="size">
+                    <h6 class="font-weight-bold mb-3">Air Conditioning</h6>
+    
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input pt-1" id="withAC">
+                        <label class="custom-control-label" for="withAC">Yes</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input pt-1" id="WithoutAC">
+                        <label class="custom-control-label" for="WithoutAC">No</label>
+                    </div>
+    
+                </section>
+                <!-- Section: A/C -->
+    
+                <!-- Section: Region -->
+                <section filter="condition" class="border border-secondary p-2 rounded-lg mb-4">
+                    <h6 class="font-weight-bold mb-3">Region</h6>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input pt-1" id="colombo1">
+                        <label class="custom-control-label" for="colombo1">Any Region</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input pt-1" id="colombo2">
+                        <label class="custom-control-label" for="colombo2">Airport Transfer</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input pt-1" id="colombo3">
+                        <label class="custom-control-label" for="colombo3">Central Hill Country</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input pt-1" id="colombo4">
+                        <label class="custom-control-label" for="colombo4">Colombo & Suburbs</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input pt-1" id="colombo5">
+                        <label class="custom-control-label" for="colombo5">Cultural Triangle (NC)</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input pt-1" id="colombo6">
+                        <label class="custom-control-label" for="colombo6">East Coast</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input pt-1" id="colombo7">
+                        <label class="custom-control-label" for="colombo7">Negombo & Surroundings</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input pt-1" id="colombo8">
+                        <label class="custom-control-label" for="colombo8">Sabaragamuwa (SW)</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input pt-1" id="colombo9">
+                        <label class="custom-control-label" for="colombo9">Southern Coast</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input pt-1" id="colombo10">
+                        <label class="custom-control-label" for="colombo10">West</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input pt-1" id="colombo11">
+                        <label class="custom-control-label" for="colombo11">Overseas</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input pt-1" id="colombo12">
+                        <label class="custom-control-label" for="colombo12">Other Areas</label>
+                    </div>
+                </section>
+            </div>
+            <!--Section: Region-->
+        </div>
+
+        <!-----------------------------------------Image Panel----------------------------------------->
+
+        <div class="container col-sm-8 float-right" style="align-self: baseline;">
+            <div class="row blog">
+                <div class="col-md-12 mb-5 mt-3">
+                    <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#blogCarousel" data-slide-to="1"></li>
+                        </ol>
+    
+                <!-- Carousel items -->
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <a href="findCars.html" class="contentLink">
+                                        <figure class="wp-caption">
+                                            <img src="img/Transpo_G70_TA-518126.jpg" class="responsive " alt="img1">
+                                            <figcaption class="wp-caption-text">Car</figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <a href="./findJeep.html" class="contentLink">
+                                        <figure class="wp-caption">
+                                            <img src="img/1.jpg" class="responsive " alt="img1">
+                                            <figcaption class="wp-caption-text">Jeep/4x4</figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <a href="./findVan.html" class="contentLink">
+                                        <figure class="wp-caption">
+                                            <img src="img/toyota_hiace_2010_wallpapers_2.jpg" class="responsive " alt="img1">
+                                            <figcaption class="wp-caption-text">Van</figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <a href="" class="contentLink">
+                                        <figure class="wp-caption">
+                                            <img src="img/coach-busSCANIA-TOURING-HIGER-HD-1557384414758923261_big-19050909460589263300.jpg" class="responsive " alt="img1">
+                                            <figcaption class="wp-caption-text">Bus/Coach</figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <!--.row-->
+                        </div>
+                        <!--.item-->
+
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <a href="" class="contentLink">
+                                        <figure class="wp-caption">
+                                            <img src="img/TAXI-DISPATCH-SYSTEM-1.jpg" class="responsive " alt="img1">
+                                            <figcaption class="wp-caption-text">Taxi/Cab</figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="" class="contentLink">
+                                        <figure class="wp-caption">
+                                            <img src="img/caravan-trailerMini-camper-250x125x140cm-camping---1555664340727915880_common--19020914032490606400.jpg" class="responsive " alt="img1">
+                                            <figcaption class="wp-caption-text">Caravan/Trailer</figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="" class="contentLink">
+                                        <figure class="wp-caption">
+                                            <img src="img/photos_dongfeng_mini_mpv_2008_1_1600x1200.jpg" class="responsive " alt="img1">
+                                            <figcaption class="wp-caption-text">MPV/Pickup</figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="" class="contentLink">
+                                        <figure class="wp-caption">
+                                            <img src="img/Carousel_MB_TV.jpg" class="responsive " alt="img1">
+                                            <figcaption class="wp-caption-text">Lorry/Truck</figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                            </div>
+                            <!--.row-->
+                        </div>
+                        <!--.item-->
+
+                    </div>
+                    <!--.carousel-inner-->
+                </div>
+                <!--.Carousel-->
+
+            </div>
+        </div>
+
+        <!-----------------------------------------Image Panel----------------------------------------->
+        <!------------------------------------ container 2 -------------------------------------------->
+
+        <!-- rating system -->
+        <!--<div class="container">
+            <div class="post">
+                <div class="text">Thanks for rating us!</div>
+                <div class="edit">EDIT</div>
+            </div>
+            <div class="star-widget">
+                <input type="radio" name="rate" id="rate-5">
+                <label for="rate-5" class="fa fa-star"></label>
+                <input type="radio" name="rate" id="rate-4">
+                <label for="rate-4" class="fa fa-star"></label>
+                <input type="radio" name="rate" id="rate-3">
+                <label for="rate-3" class="fa fa-star"></label>
+                <input type="radio" name="rate" id="rate-2">
+                <label for="rate-2" class="fa fa-star"></label>
+                <input type="radio" name="rate" id="rate-1">
+                <label for="rate-1" class="fa fa-star"></label>
+                <form action="#">
+                    <header></header>
+                    <div class="textarea">
+                        <textarea cols="30" placeholder="Describe our service.."></textarea>
+                    </div> 
+                    <div class="btn">
+                        <button type="submit">Post</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script>
+            const btn = document.querySelector("button");
+            const post = document.querySelector(".post");
+            const widget = document.querySelector(".star-widget");
+            const editBtn = document.querySelector(".edit");
+            btn.onclick = ()=>{
+                widget.style.display = "none";
+                post.style.display = "block";
+            editBtn.onclick = ()=>{
+                widget.style.display = "block";
+                post.style.display = "none";
+            }
+                return false;
+            }
+        </script>-->
+        
+        <!-- Ad2 -->
+        <div class="card ">
+            <div class="row ">
+                <div class="col-sm-4 box14">
+                    <img src="img/kdh_flat_021.jpg " class="img-responsive " alt=" ">
+                    <div class="box-content">
+                        <ul class="icon">
+                            <li>
+                                <a href="#" class="" style="text-align: center; text-decoration: none; margin-left: 10px;">9.0</a>
+                            </li>
+                            <a href="#" class="" style="text-decoration:none;">
+                                <h3 class="title">&nbsp;&nbsp;Excellent</h3>
+                            </a>
+                            <a href="#" class=""><span class="post">250 reviews</span></a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-8 ">
+                    <div class="row ">
+                        <div class="col-auto mr-auto mt-3 ">
+                            <a style="text-decoration: none;" href=" ">
+                                <h4>Vans for Hire in Colombo</h4>
+                            </a>
+                        </div>
+                        <div class="col-auto mt-3" id="info-icon ">
+                            <!-- Info Icons -->
+                            <a id="tagicon" data-toggle="tooltip" title="" href="#" class="fa fa-envelope mr-2 faicon" data-original-title="Send Message"></a>
+
+                            <a id="tagicon" data-toggle="tooltip" title="" href="#" class="fa fa-phone  mr-2 faicon" data-original-title="+94-7159-5762"></a>
+
+                            <a id="tagicon" data-toggle="tooltip" title="" href="#" class="fa fa-heart  mr-2 faicon" data-original-title="Bookmark"></a>
+                        </div>
+                    </div>
+                    <div class="row ">
+
+                        <div class="col-auto " id="info-icon ">
+                            <!-- Info Icons -->
+                            <a href=" "><i class="fa fa-map-marker mr-3 minicon" > Colombo or near</i></a>
+                            <a href=" "><i class="fa fa-gas-pump mr-3 minicon" > Like to Like</i></a>
+                            <a href=" "><i class="fa fa-tachometer-alt mr-3 minicon" > Unlimited</i></a>
+                            <a href=" "><i class="fa fa-autoprefixer mr-3 minicon" > Automatic</i></a>
+                            <a href=" "><i class="fa fa-tasks mr-3 minicon"> Van</i></a>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-auto mt-3 " id="info-icon ">
+                            <span class="fa fa-star checked "></span>
+                            <span class="fa fa-star checked "></span>
+                            <span class="fa fa-star checked "></span>
+                            <span class="fa fa-star checked "></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-sm mt-3 ">
+                            About Vehicle: Automatic Shutters, Automatic Mirrors, A/C ....
+                        </div>
+                    </div>
+                    <div class="col-sm-4  float-right">
+                        <div class="float-right"><h7 class="text-muted">Price per day:</h7></div>
+                        <div class="float-right"><h4 class="text-primary font-weight-bold">LKR6,000.00</h4></div>
+                    </div>
+                    <div class="row ">
+                        <button onclick="location.href='kdhVan.html' " type="button " class="btn btn-warning" style="border-radius: 40px; margin-bottom: 10px;font-weight: bold;">Read More</button></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Ad2 End -->
+        <nav aria-label="...">
+        
+    
+            <label class="d-flex justify-content-center align-items-center" >Show more results...</label>
+            <ul class="d-flex justify-content-center align-items-center pagination">
+    
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1">Previous</a>
+                </li>
+                <li class="page-item active">
+                    <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+    
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
+    
+    </div>
+    </div>
+
+    <!-- Javascript -->
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/carHome.js"></script>
+    <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <h6>About</h6>
+              <p class="text-justify">
+                LankaHolidays.com is an open venue for any person to submit their holiday accommodation, car hire, or any such service in Sri Lanka. LankaHolidays.com is a completely free service. We do not charge for any services from advertisers or for contacting any advertiser and requesting their services. We merely provide a venue for holidaymakers to find holiday service providers in Sri Lanka and vice-versa.
+              </p>
+            </div>
+  
+            <div class="col-xs-6 col-md-3">
+              <h6>Quick Links</h6>
+              <ul class="footer-links">
+                <li><a href="../HCI_TourService/FAQs.html">FAQ</a></li>
+                <li>
+                  <a href="../ContactUsAndFaqs/contactus.html">Contact Us</a>
+                </li>
+                <li>
+                  <a href="">Privacy Policy</a>
+                </li>
+                <li><a href="#">Sitemap</a></li>
+              </ul>
+            </div>
+  
+            <div class="col-xs-6 col-md-3">
+              <h6>Contact US</h6>
+              <ul class="footer-links">
+                <li>
+                  <a href="">+94 77124578</a>
+                </li>
+                <li>
+                  <a href="">+101 2050360</a>
+                </li>
+                <li>
+                  <a href="">support@lankaholidays.com</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <hr />
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">
+                Copyright &copy; 2017 All Rights Reserved by
+                <a href="#">lankaholidays.com</a>.
+              </p>
+            </div>
+  
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+                <li>
+                  <a class="facebook" href="#"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a class="twitter" href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a class="dribbble" href="#"><i class="fab fa-youtube"></i></a>
+                </li>
+                <li>
+                  <a class="linkedin" href="#"><i class="fab fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+</body>
+
+</html>
