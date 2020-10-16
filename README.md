@@ -8,8 +8,8 @@
 ###### IT18188578 - K.D.D.I. Kodithuwakku
 
 ### Responsible Part
-###### IT16112292 - Car/Van Hire Page - Main Page, Add Advertiestment Form, Update Advertiestment Form, View Result Page, FAQ
-###### IT18001730 - Tours/Services Page - Main Page, Add Advertiestment Form, Update Advertiestment Form, View Result Page, Contact Us
-###### IT17036580 - Login Page - Registration Page, Sign In Page, Edit Profile Page, Home Page, Header & Footer
-###### IT17176316 - Accommodation Page - Main Page, Add Advertiestment Form, Update Advertiestment Form, View Result Page, Rating and Review Page
-###### IT18188578 - Wanted Page - Main Page, Add Advertiestment Form, Update Advertiestment Form, View Result Page, My Advertistment Page
+###### IT16112292 - Car/Van Hire   - Car/Van Hire Main Page| Add Advertiestment Form| Update Advertiestment Form| View Results Page| FAQ
+###### IT18001730 - Tours/Services - Tours/Services Main Page| Add Advertiestment Form| Update Advertiestment Form| View Results Page| Contact Us
+###### IT17036580 - Login Page     - Registration Page| Sign In Page| Edit Profile Page| Home Page| Header & Footer
+###### IT17176316 - Accommodation  - Accommodation Main Page| Add Advertiestment Form| Update Advertiestment Form| View Results Page| Rating and Review Page
+###### IT18188578 - Wanted         - Wanted Main Page| Add Advertiestment Form| Update Advertiestment Form| View Results Page| My Advertistment Page
