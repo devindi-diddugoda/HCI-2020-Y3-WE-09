@@ -1,0 +1,110 @@
+h2 {
+  margin-top: 100px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.bgj {
+  padding: 25px;
+  background-color: rgb(233, 233, 233);
+}
+.nt{
+  margin-left: 200px;
+}
+
+.ac-e {
+  color: rgb(96, 96, 96) !important;
+  text-decoration: none !important;
+  font-size: 1.1rem !important;
+  font-weight: 400;
+}
+.active {
+  color: black !important;
+  font-weight: 600;
+}
+.image-preview {
+  border-radius: 25px;
+  width: 150px;
+  height: 150px;
+  border: 1px solid rgb(204, 204, 204);
+  margin-top: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: rgb(105, 105, 105);
+}
+
+.image-pre-pos {
+  display: none;
+  width: 100%;
+}
+
+.image-pre-pos {
+  border-radius: 25px;
+  width: 150px;
+  height: 150px;
+}
+
+.files {
+  margin-top: 50px;
+}
+
+.qmark {
+  width: 18px;
+  height: 18px;
+}
+.details {
+  margin-top: 5rem;
+}
+
+.form-col {
+  margin-top: 3rem;
+}
+label {
+  font-weight: 400;
+  color: rgb(83, 83, 83);
+}
+p {
+  font-weight: 300;
+}
+.mys {
+  width: 60vh;
+  padding: 9px;
+  border: 1px solid rgb(175, 175, 175);
+  font-size: 1rem;
+  border-radius: 0.4rem;
+}
+
+hr {
+  width: 70%;
+}
+.reg {
+  background: #0779e4;
+  border-radius: 0;
+  font-size: 1rem;
+  padding: 9px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 600;
+  color: white !important;
+  height: 2.8rem;
+}
+
+.reg2 {
+  margin-left: 25px;
+  background: #cd0a0a;
+  border-radius: 0;
+  font-size: 1rem;
+  padding: 9px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+  color: white !important;
+  height: 2.8rem;
+}

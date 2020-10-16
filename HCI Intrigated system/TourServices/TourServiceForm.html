@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Create Advertistment</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="css/tourForm.css">
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+
+    <!--PEN HEADER-->
+    <header class="header">
+        <h1 class="header__title">Add Your Advertistment Details</h1>
+    </header>
+    <!--PEN CONTENT     -->
+    <div class="content">
+        <!--content inner-->
+        <div class="content__inner">
+            <div class="container overflow-hidden">
+                <!--multisteps-form-->
+                <div class="multisteps-form">
+                    <!--progress bar-->
+                    <div class="row">
+                        <div class="col-12 col-lg-8 ml-auto mr-auto mb-4">
+                            <div class="multisteps-form__progress">
+                                <button class="multisteps-form__progress-btn js-active" type="button" title="Advertistment Info">Advertistment Info</button>
+                                <button class="multisteps-form__progress-btn" type="button" title="Decription">Decription</button>
+                                <button class="multisteps-form__progress-btn" type="button" title="Upload Images">Upload Images</button>
+                                <button class="multisteps-form__progress-btn" type="button" title="Contact Info">Contact Info</button>
+                                <button class="multisteps-form__progress-btn" type="button" title="Finish">Finish</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--form panels-->
+                    <div class="row">
+                        <div class="col-12 col-lg-8 m-auto">
+                            <form class="multisteps-form__form" data-toggle="validator">
+                                <!--single form panel-->
+                                <div class="multisteps-form__panel shadow p-4 rounded bg-white js-active" data-animation="scaleIn">
+                                    <h5 class="multisteps-form__title">Advertistment Info</h5>
+                                    <div class="multisteps-form__content">
+                                        <div class="form-row mt-4">
+                                            <div class="col-12 col-sm-6">
+                                                <label for="inputState">Type</label>
+                                                <select class="multisteps-form__select form-control">
+                                                    <option selected="selected">Tours in Sri Lanka</option>
+                                                    <option>Holiday Packages to Sri Lanka</option>
+                                                    <option>Ayurveda Holidays</option>
+                                                    <option>Eco Holidays</option>
+                                                    <option>Adventure Holidays</option>
+                                                    <option>Water sports</option>
+                                                    <option>Climbing</option>
+                                                    <option>Trekking</option>
+                                                    <option>Safari</option>
+                                                 </select>
+                                            </div>
+
+                                            <div class="col-12 col-sm-6">
+                                                <label for="inputState">Location</label>
+                                                <select class="multisteps-form__select form-control">
+                                                <option selected="selected">Anuradhapura</option>
+                                                <option>Badulla</option>
+                                                <option>Colombo</option>
+                                                <option>Galle</option>
+                                                <option>Hambanthota</option>
+                                                <option>Jaffna</option>
+                                                <option>Kandy</option>
+                                                <option>Negambo</option>
+                                                <option>Nuwara</option>
+                                                <option>Mathara</option>               
+                                                <option>Polonnaruwa</option>
+                                             </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-row mt-4">
+                                            <div class="col-12 col-sm-12">
+                                                <label for="inputState">Heading</label>
+                                                <input class="multisteps-form__input form-control" type="text" placeholder="AB Holiday Camping - Colombo" />
+
+                                            </div>
+                                        </div>
+
+                                        <div class="button-row d-flex mt-4">
+                                            <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next">Next</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--single form panel-->
+                                <div class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="scaleIn">
+                                    <h5 class="multisteps-form__title">Desription</h5>
+                                    <div class="multisteps-form__content">
+                                        <div class="form-row mt-4">
+                                            <textarea class="multisteps-form__textarea form-control" rows="6" required placeholder="Enter Additional Deatails"></textarea>
+                                        </div>
+
+                                        <div class="button-row d-flex mt-4">
+                                            <button class="btn btn-primary js-btn-prev" type="button" title="Prev">Previous</button>
+                                            <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next">Next</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--single form panel-->
+                                <div class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="scaleIn">
+                                    <h5 class="multisteps-form__title">Upload Images</h5>
+                                    <div class="multisteps-form__content">
+                                        <div class="container cont1">
+                                            <div class="wrapper">
+                                                <div class="image">
+                                                    <img src="" alt="">
+                                                </div>
+                                                <div class="content">
+                                                    <div class="icon">
+                                                        <i class="fas fa-cloud-upload-alt"></i></div>
+                                                    <div class="text">
+                                                        No file chosen, yet!</div>
+                                                </div>
+                                                <div id="cancel-btn">
+                                                    <i class="fas fa-times"></i></div>
+                                                <div class="file-name">
+                                                    File name here</div>
+                                            </div>
+                                            <button onclick="defaultBtnActive()" id="custom-btn">Select a image</button>
+                                            <input id="default-btn" type="file" hidden>
+                                        </div>
+
+                                        <div class="button-row d-flex">
+                                            <button class="btn btn-primary js-btn-prev " type="button" title="Prev">Previous</i></button>
+                                            <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next">Next</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--single form panel-->
+                                <div class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="scaleIn">
+                                    <h5 class="multisteps-form__title">Contact Info</h5>
+                                    <div class="multisteps-form__content">
+                                        <div class="form-row mt-4">
+                                            <div class="col-12 col-sm-6">
+                                                <label for="inputState">Contact Name</label>
+                                                <input class="multisteps-form__input form-control" type="text" placeholder="M.A. Perera" />
+                                            </div>
+                                            <div class="col-12 col-sm-6 mt-4 mt-sm-0">
+                                                <label for="inputState">Contact Number</label>
+                                                <input class="multisteps-form__input form-control" type="text" placeholder="+94 112 222 333" />
+                                            </div>
+                                        </div>
+                                        <div class="form-row mt-4">
+                                            <div class="col-12 col-sm-12">
+                                                <label for="inputState">Contact Email</label>
+                                                <input class="multisteps-form__input form-control" type="text" placeholder="name@example.com" />
+                                            </div>
+                                        </div>
+
+                                        <div class="form-row mt-4">
+                                            <div class="col-12 col-sm-12 ml-4" style="font-size: 15px;">
+                                                <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">&nbsp; I have read, understood and accept the Terms and Conditions of lankaholidays.com
+                                            </div>
+                                        </div>
+                                        <div class="button-row d-flex mt-4">
+                                            <button class="btn btn-primary js-btn-prev" type="button" title="Prev">Previous</button>
+                                            <button class="btn btn-primary  ml-auto js-btn-next" type="button" title="submit">Submit</i></button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--single form panel-->
+                                <div class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="scaleIn">
+                                    <h5 class="multisteps-form__title">Success!</h5>
+                                    <div class="multisteps-form__content">
+                                        <div class="form-row mt-4"></div>
+                                        <p class="message">You Have Successfully Posted Your Advertistment..<br>Thank You for choosing our website!</p>
+
+
+                                    </div>
+                                </div>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'></script>
+    <script src="js/tourServiceform.js"></script>
+</body>
+
+</html>
